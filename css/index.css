@@ -91,3 +91,201 @@ h2{
     width: 90%;
     margin: auto;
 }
+
+
+/* plantilla*/
+/* Seccion Servicios*/
+
+.cont-plantilla{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.jugador{
+    width: 25%;
+    padding: 50px 38px 50px 38px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.color1{
+    background-color:  #0c9b18;
+    color: aliceblue;
+}
+
+.color2{
+    background-color: #ffdf00;
+}
+
+.jugador h4{
+    font-size: 30px;
+    margin:0;
+}
+
+.jugador img{
+    float: right;
+}
+
+.seccion-plantilla{
+    margin-top: 0;
+    border-top: solid;
+    margin-bottom: 50px;
+}
+
+.bb{
+    text-align: center;
+    width:100%;
+}
+
+.bb a{
+    background-color: #5cb8ff;
+}
+
+.bb a:hover{
+    background-color: black;
+}
+
+
+/* Galeria */
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#galeria img{
+    width: 100%;
+    transition: 0.2s;
+}
+
+#galeria .foto{
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+}
+
+.oculto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000070;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    display: none;
+}
+
+.oculto h4{
+    position: relative;
+    top: 40%;
+}
+
+.agrandar{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+/*pie de pagina*/
+
+#contact{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 60px 0;
+}
+
+#contact h2{
+    margin: 0;
+}
+
+#contact svg{
+    color: #B8DE11;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+}
+
+.info p{
+    margin: 30px;
+}
+
+#contact a{
+    background-color: #B8DE11;
+    color: black;
+    font-style: italic;
+    padding: 20px 40px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.menuicon{
+    display: none;
+}
+
+#classes-mobile{
+    display: none;
+}
+
+@media (max-width: 800px){
+    .menuicon{
+        display: block;
+    }
+
+    .menu{
+        padding-top: 10px;
+    }
+
+    
+    header ul{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    nav{
+        background-color: black;
+        width: 100%;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        display:none;
+    }
+
+    nav ul li{
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 34px;
+    }
+
+    .contenedor-tarjetas, #galeria{
+        flex-direction: column;
+    }
+
+    .tarjeta{
+        width: 100%;
+    }
+
+    #mitad{
+        margin: 0;
+    }
+
+    #ultima{
+        margin-top: 1px;
+    }
+
+    #galeria .foto{
+        width: 100%;
+    }
+
+    #contact h2{
+        font-size: 38px;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+}
