@@ -32,5 +32,11 @@ public abstract class Componente {
     }
      
     //METODOS
+
+    @Override
+    public String toString() {
+        return  "nombre: " + nombre;
+    }
+    
     
 }
