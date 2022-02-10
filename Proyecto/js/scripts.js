@@ -1,45 +1,36 @@
 const Clickbutton = document.querySelectorAll('button')
-const tbody = document.querySelector('.tbody')
+const tbody =document.querySelector('.tbody')
 let carrito =[]
 Clickbutton.forEach(btn => {
     btn.addEventListener('click', addToCarritoItem)
 })
-function addToCarritoItem(e){
-    const button = e.target 
-    const item = button.closest('.card')
-    //console.log(item)
-    const itemTitle = item.querySelector('.card-title').textContent;
-    //console.log(itemTitle)
-    const itemPrice =item.querySelector('.precio').textContent
-    //console.log(itemPrice)
-    const itemImg = item.querySelector(',card-img-top').src
-    console.log(itemImg)
 
-    const newItem = {
-        title:itemTitle,
+function addToCarritoItem(e){
+    const button = e.target
+    const item = button.closest('.card')
+    const itemTitle = item.querySelector('.card-title').textContent;
+    const itemPrice = item.querySelector('.precio').textContent
+    const itemImg = item.querySelector('.card-img-top').src
+    
+    const newItem ={
+        title: itemTitle,
         precio: itemPrice,
         img: itemImg,
         cantidad: 1
     }
-
     addItemCarrito(newItem)
 }
-
 function addItemCarrito(newItem){
-    
-
-    carrito.push(newItem)
-    renderCarrito()
+carrito.push(newItem)
+renderCarrito()
 }
-
 function renderCarrito(){
-    //console.log(carrito)
     tbody.innerHTML = ''
     carrito.map(item => {
         const tr = document.createElement('tr')
         tr.classList.add('ItemCarrito')
-        const Content = `
-        <th scope="row">1</th>
+        const Content = 
+        `<th scope="row">1</th>
         <td class="table_productos">
             <img src=${item.img}
                 alt="">
@@ -52,9 +43,7 @@ function renderCarrito(){
             <input type="number" min="1" value=${item.cantidad}>
             <button class="delete btn btn-danger">x</button>
         </td>`
-        tr.innerHTML = Content;
-        tbody.append(tr)
+    tr.innerHTML = Content;
+    tbody.append(tr)
     })
-
 }
-
