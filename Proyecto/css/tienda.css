@@ -1,16 +1,21 @@
 body{
-    background-color: #110f0fea;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    color: #ffdf00;
+    margin:0;
 }
 header{
     z-index: 100;
 }
 .description{
+    color: black;
     height: 25px;
     overflow: hidden;
     transition: height .3s ease-in .3s;
 }
 .description:hover{
     height: 80px;
+    color: black;
 }
 .carrito{
 min-height: vh;
@@ -35,4 +40,64 @@ width: 100%
     font-weight: 700;
     margin-right: 30px;
     margin-bottom: 20px;
+}
+.nombret {
+    background-color: #ffdf00;
+    font-size: 20px;
+    padding: 15px 25px 15px 25px;
+    display: flex;
+    align-items: center;
+}
+
+.menu li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.menu img{
+    width: 60px;
+    margin-bottom: -3px;
+    margin-left: -5px;
+    margin-right: 10px;
+}
+
+.lista{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.h4{
+    color: #0c9b18;
+    font-weight: 600;
+}
+
+.boton{
+    background-color: #ffdf00;
+}
+
+.boton:hover{
+    background: #0c9b18;
+}
+.texto{
+    color: #0c9b18;
+}
+.imagen{
+    width: 260px;
+    height: 300px;
 }
