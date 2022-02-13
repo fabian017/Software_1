@@ -47,3 +47,9 @@ function renderCarrito(){
     tbody.append(tr)
     })
 }
+function CarritoTotal(){
+    let Total = 0;
+    const itemCartTotal = document.querySelector('.itemCartTotal')
+    const precio = Number(item.precio.replace("$", ''))
+    Total = Total + precio*item.cantidad
+}
