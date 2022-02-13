@@ -101,3 +101,30 @@ a{
     width: 260px;
     height: 300px;
 }
+
+.carro{
+    color:#0c9b18;
+}
+
+.carro:hover{
+    color: #ffdf00;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #0c9b18;
+}
+.nav-link.active{
+    background-color: #0c9b18;
+}
+
+.table>:not(caption)>*>*{
+    background-color: #ffffff;
+    color: #0c9b18;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>*{
+    background-color: #ffffff;
+    color: #0c9b18;
+}
+
+.table-dark{
+    --bs-table-striped-bg: white;
+}
