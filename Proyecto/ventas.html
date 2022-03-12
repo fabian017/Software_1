@@ -38,6 +38,12 @@
         </div>
 
     </header>
+    <div class="alert container position-sticky top 0 alert-primary hide" role="alert">
+        Producto añadido al Carrito
+      </div>
+      <div class="alert container position-sticky top 0 alert-danger remove" role="alert">
+        Producto removido
+      </div>
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">1</div>
         <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
@@ -52,9 +58,7 @@
                         <img src="./productos/camiseta-ATLETICO-BUCARAMANGA-2017-Deporte-Total-home-Casacas-LuchoLasS.png"
                             class="card-img-top imagen" alt="...">
                         <div class="card-body">
-                            <p class="card-text  description">Some quick example text to build on the card
-                                title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text  description">Camiseta local leoparda 100% algodon temporada 2022</p>
                             <h5 class=" texto">Precio: <span class="precio">$40</span></h5>
                             <div class="d-grid gap 2">
                                 <button class="btn btn-primary button boton">Añadir a carrito</button>
@@ -67,9 +71,7 @@
                         <h5 class="card-title pt-2 text-center  texto">Camisa Hombre 2021</h5>
                         <img src="./productos/camisa2.jpg" class="card-img-top imagen" alt="...">
                         <div class="card-body">
-                            <p class="card-text  description">Some quick example text to build on the card
-                                title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text  description">Camiseta local leoparda 100% algodon temporada 2021</p>
                             <h5 class=" texto ">Precio: <span class="precio">$50</span></h5>
                             <div class="d-grid gap 2">
                                 <button class="btn btn-primary button boton">Añadir a carrito</button>
@@ -79,12 +81,10 @@
                 </div>
                 <div class="col d-flex justify-content-center mb-4">
                     <div class="card shadow mb-1 rounded" style="width: 20rem;">
-                        <h5 class="card-title pt-2 text-center  texto">Uniforme Completo</h5>
+                        <h5 class="card-title pt-2 text-center  texto">Posillo leopardo</h5>
                         <img src="./productos/Posillo.jpg" class="card-img-top imagen" alt="...">
                         <div class="card-body">
-                            <p class="card-text  description">Some quick example text to build on the card
-                                title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text  description">Consume tus bebidas como un verdadero hincha leopardo</p>
                             <h5 class=" texto">Precio: <span class="precio">$10</span></h5>
                             <div class="d-grid gap 2">
                                 <button class="btn btn-primary button boton">Añadir a carrito</button>
@@ -94,12 +94,10 @@
                 </div>
                 <div class="col d-flex justify-content-center mb-4">
                     <div class="card shadow mb-1 rounded" style="width: 20rem;">
-                        <h5 class="card-title pt-2 text-center  texto ">Posillo</h5>
+                        <h5 class="card-title pt-2 text-center  texto ">Unifomre Completo</h5>
                         <img src="./productos/Uniforme completo.jpg" class="card-img-top imagen" alt="...">
                         <div class="card-body">
-                            <p class="card-text  description">Some quick example text to build on the card
-                                title and make up the bulk
-                                of the card's content.</p>
+                            <p class="card-text  description">Uniforme completo para los niños, incluye pantaloneta y medias</p>
                             <h5 class="texto">Precio: <span class="precio">$30</span></h5>
                             <div class="d-grid gap 2">
                                 <button class="btn btn-primary button boton">Añadir a carrito</button>
