@@ -1,0 +1,15 @@
+Descargar XAMPP
+
+Esta carpeta proyectoIS copiar en la carpeta donde instalo el XAMPP
+dentro de la carpeta XAMPP entrar en la que dice htdocs, y allí pegar la copia del proyectoIS
+
+Abrir el XAMPP panel control, run en el servidor Apache y en MySQL
+En el navegador abrir localhost/
+
+Primera configuración:
+    Allí click en phpMyAdmin y dentro creamos la base de datos site-ab
+    Entramos en la base de datos e importamos los datos que estan en la carpeta DB
+
+
+
+Al terminar copiar la carpeta proyectoIS que se encuentra dentro de htdocs y ponerla en el repositorio para subir los cambios
