@@ -1,0 +1,150 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    background-color: #ffffff;
+}
+
+.nombret {
+    background-color: #ffdf00;
+    font-size: 20px;
+    padding: 15px 25px 15px 25px;
+    display: flex;
+    align-items: center;
+}
+
+.menu li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.menu img{
+    width: 60px;
+    margin-bottom: -3px;
+    margin-left: -5px;
+    margin-right: 10px;
+}
+
+.lista{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.boton{
+    text-decoration: none;
+    font-size: 14px;
+    background: #0c9b18;
+    padding: 15px 30px 15px 30px;
+    color: white;
+}
+
+.boton:hover{
+    background-color: #6acc1a;
+}
+
+.titular h1{
+    font-size: 60px;
+    background: #0c9b18;
+    margin: 0;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    border-radius: 73px;
+    display: inline-block;
+    text-align: center;
+}
+
+header{
+    height: 100vh;
+    background-size: cover;
+    margin: 0;
+}
+
+h2{
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.titular{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+
+/* plantilla*/
+/* Seccion Servicios*/
+
+.cont-plantilla{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.jugador{
+    width: 25%;
+    padding: 50px 38px 50px 38px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.color1{
+    background-color:  #0c9b18;
+    color: aliceblue;
+}
+
+.color2{
+    background-color: #ffdf00;
+}
+
+.jugador h4{
+    font-size: 30px;
+    margin:0;
+}
+
+.jugador img{
+    float: right;
+}
+
+.seccion-plantilla{
+    margin-top: 0;
+    border-top: solid;
+    margin-bottom: 50px;
+}
+
+.bb{
+    text-align: center;
+    width:100%;
+}
+
+.bb a{
+    background-color: #5cb8ff;
+}
+
+.bb a:hover{
+    background-color: black;
+}
+
+
