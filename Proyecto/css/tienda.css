@@ -4,7 +4,7 @@ body{
     color: #ffdf00;
     margin:0;
 }
-header{
+header, .alert{
     z-index: 100;
 }
 .description{
@@ -127,4 +127,7 @@ a{
 
 .table-dark{
     --bs-table-striped-bg: white;
+}
+.hide, .remove{
+    display: none;
 }

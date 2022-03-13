@@ -21,13 +21,20 @@ function addToCarritoItem(e){
     addItemCarrito(newItem)
 }
 function addItemCarrito(newItem){
+    const alert = document.querySelector('.alert')
+    setTimeout(function(){
+        alert.classList.add('hide')
+    },2000)
+    alert.classList.remove('hide')
+
+
+
     const InputElemento = tbody.getElementsByClassName('input_elemento')
     for(let i=0; i < carrito.length ; i++){
         if(carrito[i].title.trim() === newItem.title.trim()){
             carrito[i].cantidad ++;
             const inputValue = InputElemento[i]
             inputValue.value++;
-            console.log(carrito)
             return null;
         }
     }
@@ -70,17 +77,24 @@ function CarritoTotal(){
 
 })
 itemCartTotal.innerHTML = `Total $${Total}`
+addLocalStorage()
 }
 function removeItemCarrito(e){
-    const buttonDelete =e.target
-    const tr =buttonDelete.closest(".ItemCarrito")
+    const buttonDelete = e.target
+    const tr = buttonDelete.closest(".ItemCarrito")
     const title = tr.querySelector('.title').textContent;
     for(let i=0; i<carrito.length; i++){
         if(carrito[i].title.trim() === title.trim()){
             carrito.splice(i, 1)
         }
     }
-    tr.remove
+
+    const alert = document.querySelector('.remove')
+    setTimeout(function(){
+        alert.classList.add('remove')
+    },2000)
+    alert.classList.remove('remove')
+    tr.remove()
     CarritoTotal()
 }
 function sumaCantidad(e){
@@ -94,4 +108,14 @@ function sumaCantidad(e){
             CarritoTotal()
         }
     })
+}
+function addLocalStorage(){
+    localStorage.setItem('carrito',JSON.stringify(carrito))
+}
+window.onload = function(){
+    const storage = JSON.parse(localStorage.getItem('carrito'));
+    if(storage){
+        carrito = storage;
+        renderCarrito()
+    }
 }
