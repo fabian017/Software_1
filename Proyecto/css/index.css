@@ -146,5 +146,92 @@ h2{
 .bb a:hover{
     background-color: black;
 }
+.contenido-foter{
+    background-color: #0c9b18;
+    padding: 3rem;
+}
+.iconos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconos-centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media (max-width: 600px) {
+    .iconos{
+       flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.icon{
+    width: 65px;
+    height: 65px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .4s;
+}
+
+.icon:nth-child(1):hover{
+    box-shadow: 0px 0px 0px 10px #ffdf00 ;
+}
+
+.icon:nth-child(2):hover{
+   box-shadow: 0px 0px 0px 10px #ffdf00 ;
+}
+
+.icon:nth-child(3):hover{
+    box-shadow: 0px 0px 0px 10px #ffdf00 ;
+}
+.icon:nth-child(4):hover{
+    box-shadow: 0px 0px 0px 10px #ffdf00 ;
+}
+.icon:nth-child(5):hover{
+    box-shadow: 0px 0px 0px 10px #ffdf00 ;
+}
+
+
+.fa-facebook {
+    color: #ffdf00; 
+}
+
+.fa-twitter-square{
+    color: #ffdf00; 
+}
+
+.fa-phone-square-alt{
+    color: #ffdf00; 
+}
+
+.fa-instagram-square{
+    color: #ffdf00; 
+}
+
+.fa-search-location{
+    color: #ffdf00; 
+}
+/** escudo   **/
+.escudo{
+    width: 8%; 
+}
+
+.cont-escudo{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -4.5rem;
+}
+
+@media (max-width: 768px) {
+    .escudo{
+        display: none;
+    }
+}
 
 
