@@ -22,9 +22,10 @@
                 <ul class="nav nav-pills mb-3 py-3 container lista" id="pills-tab" role="tablist">
                     <a href="/proyectois"><li>Inicio</li></a>
                     <a href="plantilla.php"><li>Plantilla</li></a>
-                    <a href="Proximos_partidos.php"><li >Calendario</li> </a>
+                    <a href="calendario.php"><li >Calendario</li> </a>
                     <a href="tienda.php"><li >Tienda</li></a>
                     <a href="boleteria.php"><li >Boleteria</li></a>
+                    <a href="login_user.php"><li >Login</li></a>
                     <li class="nav-item carro" role="presentation">
                         <a class="nav-link carro" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
                             type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</a>
@@ -56,7 +57,7 @@
                     <div class="col d-flex justify-content-center mb-4 producto">
                         <div class="card shadow mb-1 rounded" style="width: 20rem;">
                             <h5 class="card-title pt-2 text-center  texto"><?php echo $filas['nombre'] ?></h5>
-                            <img src="./productos/<?php echo $filas['nombre'] ?>.png"
+                            <img src="./img/productos/<?php echo $filas['nombre'] ?>.png"
                                 class="card-img-top imagen" alt="...">
                             <div class="card-body">
                                 <p class="card-text  description"><?php echo $filas['descripcion'] ?></p>
@@ -134,4 +135,4 @@
         crossorigin="anonymous"></script>
     <script src="./js/scripts.js"></script>
 
-    <?php include("template/footer.php"); ?>
+<?php include("template/footer.php"); ?>
