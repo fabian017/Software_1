@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proximos Partidos de Atletico Bucaramanga</title>
     <link rel="stylesheet" href="css/PartidosF.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js
+"
+></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
 </head>
 <body>
     <header>
@@ -88,6 +99,50 @@
             <img src="Partidos_F/rightarrow.svg" class="slider_arrow" id="next">
         </div>
     </selection>
+
+        <div class="cont-escudo">
+            <img src="img/escudo.png" class="escudo">
+        </div>   
+            
+        <footer class=" contenido-foter no-margin">
+            <div class="contenedor">
+            <div class="iconos">
+                <div class="iconos-centrar icon">
+                <i class="fab fa-facebook fa-4x"></i>
+                </div>
+                <div class="iconos-centrar icon">
+                <i class="fab fa-twitter-square fa-4x"></i>
+                </div>
+                <div class="iconos-centrar icon">
+                <i class="fas fa-phone-square-alt fa-4x"></i>
+                </div>
+                <div class="iconos-centrar icon">
+                <i class="fab fa-instagram-square fa-4x"></i>
+                </div>
+                <div class="iconos-centrar icon">
+                <i class="fas fa-search-location fa-4x"></i>
+                </div>
+            </div>
+            </div>        
+        </footer>            
+        
+        <!-- poner el jqery -->
+        <script 
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>  
+
+            
+        <script>
+        $(document).ready(function(){
+
+            $('.menu-icon').click(function(){ ///llamar menu
+            $('nav').slideToggle();  // sacar el menu
+                
+            })
+
+        })    
+        </script>
 
     <script src="js/sliders.js"></script>
 </body>
