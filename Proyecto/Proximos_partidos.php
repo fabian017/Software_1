@@ -16,10 +16,10 @@
                 </p> 
                 <nav>
                     <ul class="lista">
-                        <a href="Proximos_partidos.html"><li>Calendario</li></a>
-                        <a href="plantilla.html"><li>Plantilla</li></a>
-                        <a href="ventas.html"><li>Tienda</li></a>
-                        <li>Boleteria</li>
+                        <a href="Proximos_partidos.php"><li>Calendario</li></a>
+                        <a href="plantilla.php"><li>Plantilla</li></a>
+                        <a href="ventas.php"><li>Tienda</li></a>
+                        <a href="boleteria.php"><li>Boleteria</li></a>
                         <a href="index.html"><li ><img src="img/escudo.png" alt=""></li></a>
                     </ul>
                 </nav>

@@ -22,11 +22,11 @@
             </p> 
             <nav>
                 <ul class="nav nav-pills mb-3 py-3 container lista" id="pills-tab" role="tablist">
-                    <a href="index.html"><li>Inicio</li></a>
+                    <a href="index.php"><li>Inicio</li></a>
                     <a href="#"><li>Servicios</li></a>
-                    <a href="Proximos_partidos.html"><li>calendario</li></a>
-                    <a href="ventas.html"><li>Ventas</li></a>
-                    <a href="boleteria.html"><li>Boleteria</li></a>
+                    <a href="Proximos_partidos.php"><li>calendario</li></a>
+                    <a href="ventas.php"><li>Ventas</li></a>
+                    <a href="boleteria.php"><li>Boleteria</li></a>
                     <li class="nav-item carro" role="presentation">
                         <a class="nav-link carro" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
                             type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</a>
