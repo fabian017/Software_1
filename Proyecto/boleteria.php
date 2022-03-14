@@ -11,7 +11,16 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/tienda.css">
+    <link rel="stylesheet" href="css/boleteria.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js
+"
+></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -38,6 +47,7 @@
         </div>
 
     </header>
+    <selection>
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">1</div>
         <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
@@ -175,6 +185,50 @@
             </div>
         </div>
     </div>
+</selection>
+        <div class="cont-escudo">
+            <img src="img/escudo.png" class="escudo">
+        </div> 
+
+        <footer class=" contenido-foter no-margin">
+            <div class="contenedor">
+            <div class="iconos">
+                <div class="iconos-centrar icon">
+                <i class="fab fa-facebook fa-4x"></i>
+                </div>
+                <div class="iconos-centrar icon">
+                <i class="fab fa-twitter-square fa-4x"></i>
+                </div>
+                <div class="iconos-centrar icon">
+                <i class="fas fa-phone-square-alt fa-4x"></i>
+                </div>
+                <div class="iconos-centrar icon">
+                <i class="fab fa-instagram-square fa-4x"></i>
+                </div>
+                <div class="iconos-centrar icon">
+                <i class="fas fa-search-location fa-4x"></i>
+                </div>
+            </div>
+            </div>        
+        </footer>            
+        
+        <!-- poner el jqery -->
+        <script 
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>  
+
+            
+        <script>
+        $(document).ready(function(){
+
+            $('.menu-icon').click(function(){ ///llamar menu
+            $('nav').slideToggle();  // sacar el menu
+                
+            })
+
+        })    
+        </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
