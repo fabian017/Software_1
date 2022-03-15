@@ -84,13 +84,15 @@
                         
                     }else{
                     ?>
-                    <form action="<?=$_SERVER['PHP_SELF']?>" class="formulario__login" method="POST">
+                    <div class="contenedor-iniciar-sesion">
+                    <form  action="<?=$_SERVER['PHP_SELF']?>" class="formulario__login" method="POST">
                         <h2>Iniciar Sesión</h2>
                         <input type="email" placeholder="Correo Electronico" name="correo-login">
                         <input type="password" placeholder="Contraseña" name="pass-login">
                         <input type="checkbox" class="role-admin"><label>Admin  </label><br>
                         <button class="entrar" name="entrar" type="submit">Entrar</button>
                     </form>
+                    </div>
                     <?php
                         }
                     ?>

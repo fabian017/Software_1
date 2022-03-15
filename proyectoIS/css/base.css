@@ -51,6 +51,23 @@ a:hover{
     color: black;
 }
 
+.titulos{
+    font-size: 30px;
+    background: #0c9b18;
+    margin: 40px;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    border-radius: 73px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .titulos{
+        font-size: 2.5rem;
+    }
+}
+
+
 /** footer */
 
 .contenido-foter{

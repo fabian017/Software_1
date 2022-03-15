@@ -5,7 +5,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-color: #f55212; 
+    background-color: #ffffff; 
 }
 
 main{
@@ -29,7 +29,7 @@ main{
     justify-content: center;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgb(58, 26, 238);
+    background-color: #0c9b18;
 
 }
 
@@ -90,7 +90,8 @@ main{
 
 .contenedor__login-register form{
     width: 100%;
-    padding: 80px 20px;
+    padding: 10px 15px;
+    margin-top: -150px;
     background: white;
     position: absolute;
     border-radius: 20px;
@@ -138,16 +139,20 @@ label{
 }
 
 
-
 .formulario__login{
     opacity: 1;
+    margin-top: -393px;
+    background-color: #ffffff;
     display: block;
+
 }
 .formulario__register{
     display: none;
 }
 
-
+.contenedor-iniciar-sesion{
+    margin-top: -199px;
+}
 
 @media screen and (max-width: 850px){
 

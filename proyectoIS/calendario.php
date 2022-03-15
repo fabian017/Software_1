@@ -47,8 +47,11 @@
             </div>
         </div>
     </header>
+    
     <selection class="slider">
+    <h1 class="titulos">Plantilla</h1>
         <div class="slider_container container">
+            
             <img src="img/leftarrow.svg" class="slider_arrow" id="before">
 
             <selection class="slider_body slider_body--show" data-id="1">

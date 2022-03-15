@@ -7,7 +7,7 @@ body{
 header, .alert{
     z-index: 100;
 }
-.description{
+.description{ 
     color: black;
     height: 25px;
     overflow: hidden;
