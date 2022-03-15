@@ -146,5 +146,4 @@
     </script>
 
     <script src="js/sliders.js"></script>
-</body>
-</html>
+    <?php include("template/footer.php"); ?>

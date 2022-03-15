@@ -60,7 +60,7 @@ a{
 .titular h1{
     font-size: 60px;
     background: #0c9b18;
-    margin: 0;
+    margin: 40px;
     color: white;
     padding: 15px 30px 15px 30px;
     border-radius: 73px;
@@ -77,13 +77,14 @@ header{
 h2{
     font-size: 25px;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     color: black;
 }
 
 .titular{
     text-align: center;
     margin-top: 150px;
+    margin-bottom: 160px;
 }
 
 .contenedor{

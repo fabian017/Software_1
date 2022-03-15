@@ -202,6 +202,11 @@ a{
     text-decoration: none;
     color: black;
 }
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
 /* menu responsive */
 
 .menu-icon{
@@ -395,10 +400,10 @@ a{
 }
 
 .cont-escudo{
-    margin-top: 5rem;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
-    margin-bottom: -4.5rem;
+    margin-bottom: -70px;
 }
 
 @media (max-width: 768px) {
@@ -415,7 +420,7 @@ a{
 }
 
 .ir{
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 
 @media (max-width: 768px) {
@@ -426,12 +431,12 @@ a{
 }
 
 .autores h5{
-    font-size: 1.4rem;
+    font-size: 20px;
     color: #808080;
 }
 .autores{
     background: black;
-    padding-bottom: 2rem;
+    padding-bottom: 30px;
 }
 
 
@@ -489,7 +494,7 @@ a{
 .hover p, .hover h4{
     color:aliceblue;
     text-shadow: 1px 1px 1px black;
-    font-size: 1.5rem;  
+    font-size:20px;  
 }
 .box:hover .hover{
     width: 100%;
@@ -498,7 +503,7 @@ a{
 .hover h2{
         color:aliceblue;
     text-shadow: 1px 1px 1px black;
-    font-size: 4rem;  
+    font-size: 68px;  
 }
 
 

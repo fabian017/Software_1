@@ -1,0 +1,147 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    background-color: #ffffff;
+}
+
+.nombret {
+    background-color: #ffdf00;
+    font-size: 20px;
+    padding: 15px 25px 15px 25px;
+    display: flex;
+    align-items: center;
+}
+
+.menu li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu img{
+    width: 60px;
+    margin-bottom: -3px;
+    margin-left: -5px;
+    margin-right: 10px;
+}
+
+.lista{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+/** footer */
+
+.contenido-foter{
+    background-color: #0c9b18;
+    padding: 30px;
+}
+.iconos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconos-centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media (max-width: 600px) {
+    .iconos{
+       flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.icon{
+    width: 65px;
+    font-size: 10px;
+    height: 65px;
+    margin: 60px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all .4s;
+}
+
+.icon:nth-child(1):hover{
+    box-shadow: 0px 0px 0px 10px #ffdf00 ;
+}
+
+.icon:nth-child(2):hover{
+   box-shadow: 0px 0px 0px 10px #ffdf00 ;
+}
+
+.icon:nth-child(3):hover{
+    box-shadow: 0px 0px 0px 10px #ffdf00 ;
+}
+.icon:nth-child(4):hover{
+    box-shadow: 0px 0px 0px 10px #ffdf00 ;
+}
+.icon:nth-child(5):hover{
+    box-shadow: 0px 0px 0px 10px #ffdf00 ;
+}
+
+
+.fa-facebook {
+    color: #ffdf00; 
+}
+
+.fa-twitter-square{
+    color: #ffdf00; 
+}
+
+.fa-phone-square-alt{
+    color: #ffdf00; 
+}
+
+.fa-instagram-square{
+    color: #ffdf00; 
+}
+
+.fa-search-location{
+    color: #ffdf00; 
+}
+
+/* para el escudo */
+
+.escudo{
+    width: 8%; 
+}
+
+.cont-escudo{
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -30px;
+}
+
+@media (max-width: 768px) {
+    .escudo{
+        display: none;
+    }
+}
+
+
