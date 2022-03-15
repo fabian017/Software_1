@@ -108,7 +108,7 @@
                         $apellido=$_POST['apellido'];
                         $correo=$_POST['correo'];
                         $username=$_POST['username'];
-                        $pass=password_hash($_POST['pass'], PASSWORD_BCRYPT);
+                        $pass=$_POST['pass'];
                         include("conexion.php");
                         //INSERT INTO `producto` (id, nombre, precio, correo, descripcion) VALUES (NULL, $nombre,$precio,$unidades,$descripcion);
                         $sql="INSERT INTO cliente (id,nombre,apellido,correo,username,pass) 

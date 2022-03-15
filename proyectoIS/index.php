@@ -33,7 +33,7 @@
                         <a href="tienda.php"><li>Tienda</li></a>
                         <a href="boleteria.php"><li>Boleteria</li></a>
                         <?php if(!empty($user)): ?>
-                                <li>Hola. <?= $user['nombre']; ?> <?= $user['apellido']?></li>
+                                <li class="nombre_usuario">Hola. <?= $user['nombre']; ?> <?= $user['apellido']?></li>
                                 <a href="logout.php"><li>Logout</li></a>
                         <?php else: ?>
                                 <a href="login_user.php"><li>Login</li></a>
