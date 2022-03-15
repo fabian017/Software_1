@@ -1,3 +1,7 @@
+
+
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -52,15 +56,50 @@
 
                 <!--Formulario de Login y registro-->
                 <div class="contenedor__login-register">
+
                     <!--Login-->
+                    <?php
+
+                    session_start();
+
+                    if (isset($_SESSION['user_id'])) {
+                    header('Location: /proyectois');
+                    }
+                    include("conexion.php");
+
+                    if(isset($_POST['entrar'])){
+                        
+                        $correo=$_POST['correo-login'];
+                        $pass=$_POST['pass-login'];
+
+                        include("conexion.php");
+
+                        $sql="SELECT id,nombre,apellido,correo,username,pass FROM cliente WHERE correo = '".$correo."';";
+
+                        $resultado=mysqli_query($conexion,$sql);
+                        $fila=mysqli_fetch_assoc($resultado);
+                        if($fila['pass']==$pass){
+                            $_SESSION['user_id']=$fila['id'];
+                            header("Location: /proyectois");
+                        }else{
+                            echo " <script language='JavaScript'>
+                                    alert('ERROR: Login fallido');
+                                    location.assign('login_user.php');
+                                    </script>";
+                        }
+                        
+                    }else{
+                    ?>
                     <form action="<?=$_SERVER['PHP_SELF']?>" class="formulario__login" method="POST">
                         <h2>Iniciar Sesión</h2>
-                        <input type="email" placeholder="Correo Electronico">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="email" placeholder="Correo Electronico" name="correo-login">
+                        <input type="password" placeholder="Contraseña" name="pass-login">
                         <input type="checkbox" class="role-admin"><label>Admin  </label><br>
-                        <button class="entrar">Entrar</button>
+                        <button class="entrar" name="entrar" type="submit">Entrar</button>
                     </form>
-
+                    <?php
+                        }
+                    ?>
                     <!--Register-->
                     <?php
                     if(isset($_POST['enviar'])){
@@ -69,7 +108,7 @@
                         $apellido=$_POST['apellido'];
                         $correo=$_POST['correo'];
                         $username=$_POST['username'];
-                        $pass=$_POST['pass'];
+                        $pass=password_hash($_POST['pass'], PASSWORD_BCRYPT);
                         include("conexion.php");
                         //INSERT INTO `producto` (id, nombre, precio, correo, descripcion) VALUES (NULL, $nombre,$precio,$unidades,$descripcion);
                         $sql="INSERT INTO cliente (id,nombre,apellido,correo,username,pass) 
