@@ -80,7 +80,7 @@
                             10a. fecha - marzo 6<br>
                             Hora: 4:05 p.m.<br>
                             Estadio: Daniel Villa Zapata<br>
-                            Televisión: Win+
+                            Transmisión: Win+
                         </p>
                 </div>
 
@@ -96,14 +96,50 @@
                         Atletico Bucaramanga Vs Deportivo Cali
                         <p class="slider_review">
                             11a. fecha - marzo 20<br>
-                            Hora: ?<br>
+                            Hora: 6:05 p.m.<br>
                             Estadio: Alfonso López<br>
-                            Televisión: ?
+                            Transmisión: Win+
                         </p>
                 </div>
 
                     <figure class="slider_picture">
                         <img src="img/bucaramanga-vs-cali.jpg" class="slider_img">
+                    </figure>
+                </h2>
+            </selection>
+
+            <selection class="slider_body" data-id="4">
+                <div class="slider_texts">
+                    <h2 class="subtitle">
+                        Independiente Santa Fe Vs Atletico Bucaramanga
+                        <p class="slider_review">
+                            12a. fecha - marzo 21<br>
+                            Hora: 8:15 p.m.<br>
+                            Estadio: El Campin<br>
+                            Transmisión: Win+
+                        </p>
+                </div>
+
+                    <figure class="slider_picture">
+                        <img src="img/santafe_vs_bucaramanga.jpg" class="slider_img">
+                    </figure>
+                </h2>
+            </selection>
+
+            <selection class="slider_body" data-id="5">
+                <div class="slider_texts">
+                    <h2 class="subtitle">
+                        Atletico Bucaramanga Vs Jaguares FC
+                        <p class="slider_review">
+                            13a. fecha - marzo 26<br>
+                            Hora: 2:00 p.m.<br>
+                            Estadio: Alfonso Lopez<br>
+                            Transmisión: Win/Win+
+                        </p>
+                </div>
+
+                    <figure class="slider_picture">
+                        <img src="img/jaguares_vs_bucaramanga.png" class="slider_img">
                     </figure>
                 </h2>
             </selection>
