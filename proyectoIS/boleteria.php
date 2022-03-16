@@ -76,10 +76,7 @@
                         <img src="./img/boleto_generico.jpeg"
                             class="card-img-top imagen" alt="...">
                         <div class="card-body">
-                            <p class="card-text  description">Some quick example text to build on the card
-                                title and make up the bulk
-                                of the card's content.</p>
-                            <h5 class=" texto">Precio: <span class="precio">15000</span></h5>
+                            <h5 class=" texto">Precio: <span class="precio"> $15.000</span></h5>
                             <div class="d-grid gap 2">
                                 <button class="btn btn-primary button boton">Añadir a carrito</button>
                             </div>
@@ -91,10 +88,7 @@
                         <h5 class="card-title pt-2 text-center  texto">Norte Alta</h5>
                         <img src="./img/boleto_generico.jpeg" class="card-img-top imagen" alt="...">
                         <div class="card-body">
-                            <p class="card-text  description">Some quick example text to build on the card
-                                title and make up the bulk
-                                of the card's content.</p>
-                            <h5 class=" texto ">Precio: <span class="precio">15000</span></h5>
+                            <h5 class=" texto ">Precio: <span class="precio"> $15.000</span></h5>
                             <div class="d-grid gap 2">
                                 <button class="btn btn-primary button boton">Añadir a carrito</button>
                             </div>
@@ -106,10 +100,7 @@
                         <h5 class="card-title pt-2 text-center  texto">Oriental</h5>
                         <img src="./img/boleto_generico.jpeg" class="card-img-top imagen" alt="...">
                         <div class="card-body">
-                            <p class="card-text  description">Some quick example text to build on the card
-                                title and make up the bulk
-                                of the card's content.</p>
-                            <h5 class=" texto">Precio: <span class="precio">25000</span></h5>
+                            <h5 class=" texto">Precio: <span class="precio"> $25.000</span></h5>
                             <div class="d-grid gap 2">
                                 <button class="btn btn-primary button boton">Añadir a carrito</button>
                             </div>
@@ -121,10 +112,7 @@
                         <h5 class="card-title pt-2 text-center  texto ">Occidental Baja</h5>
                         <img src="./img/boleto_generico.jpeg" class="card-img-top imagen" alt="...">
                         <div class="card-body">
-                            <p class="card-text  description">Some quick example text to build on the card
-                                title and make up the bulk
-                                of the card's content.</p>
-                            <h5 class="texto">Precio: <span class="precio">35000</span></h5>
+                            <h5 class="texto">Precio: <span class="precio"> $35.000</span></h5>
                             <div class="d-grid gap 2">
                                 <button class="btn btn-primary button boton">Añadir a carrito</button>
                             </div>
@@ -136,10 +124,7 @@
                         <h5 class="card-title pt-2 text-center  texto ">Occidental Alta</h5>
                         <img src="./boletos/boleto_generico.jpeg" class="card-img-top imagen" alt="...">
                         <div class="card-body">
-                            <p class="card-text  description">Some quick example text to build on the card
-                                title and make up the bulk
-                                of the card's content.</p>
-                            <h5 class="texto">Precio: <span class="precio">50000</span></h5>
+                            <h5 class="texto">Precio: <span class="precio"> $50.000</span></h5>
                             <div class="d-grid gap 2">
                                 <button class="btn btn-primary button boton">Añadir a carrito</button>
                             </div>
