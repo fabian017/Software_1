@@ -30,7 +30,7 @@
                 </p> 
                 <nav>
                     <ul class="lista">
-                        <a href="/proyectois"><li>Inicio</li></a>
+                        <a href="index.php"><li>Inicio</li></a>
                         <a href="plantilla.php"><li >Plantilla</li></a>
                         <a href="calendario.php"><li>Calendario</li></a>
                         <a href="tienda.php"><li >Tienda</li></a>
@@ -49,7 +49,7 @@
     </header>
     
     <selection class="slider">
-    <h1 class="titulos">Plantilla</h1>
+    <h1 class="titulos">Calendario Leopardo</h1>
         <div class="slider_container container">
             
             <img src="img/leftarrow.svg" class="slider_arrow" id="before">

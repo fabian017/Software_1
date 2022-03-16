@@ -27,7 +27,7 @@
             </p> 
             <nav>
                 <ul class="lista">
-                        <a href="/proyectois"><li>Inicio</li></a>
+                        <a href="index.php"><li>Inicio</li></a>
                         <a href="plantilla.php"><li>Plantilla</li></a>
                         <a href="calendario.php"><li >Calendario</li></a>
                         <a href="tienda.php"><li>Tienda</li></a>
