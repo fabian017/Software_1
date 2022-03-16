@@ -27,6 +27,12 @@
 </head>
 
 <body>
+    <?php
+        include("conexion.php");
+        //select * from boleta;
+        $sql="select * from boleta";
+        $resultado=mysqli_query($conexion,$sql);    
+    ?>
     <header class="container-fluid  position-sticky top-0">
         <div class="menu">
             <p class="nombret">
@@ -67,72 +73,32 @@
         <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
             aria-labelledby="pills-profile-tab">
             <h2 class="h4 m-4">Boleteria Oficial Atletico Bucaramanga</h2>
-
+            
             <div class=" row row-cols-sm-1 row row-cols-smd-2 row row-cols-lg-3 row row-cols-xl-4">
-
+                <?php
+                    while($filas=mysqli_fetch_assoc($resultado)){
+                ?>
                 <div class="col d-flex justify-content-center mb-4 producto">
                     <div class="card shadow mb-1 rounded" style="width: 20rem;">
-                        <h5 class="card-title pt-2 text-center  texto">Sur Alta</h5>
+                        <h5 class="card-title pt-2 text-center  texto"><?php echo $filas['nombre'] ?></h5>
                         <img src="./img/boleto_generico.jpeg"
                             class="card-img-top imagen" alt="...">
                         <div class="card-body">
-                            <h5 class=" texto">Precio: $ <span class="precio">15000</span></h5>
+                            <p class="card-text  description"><?php echo $filas['partido'] ?></p>
+                            <h5 class=" texto">Precio: $ <span class="precio"><?php echo $filas['precio'] ?></span></h5>
                             <div class="d-grid gap 2">
                                 <button class="btn btn-primary button boton">Añadir a carrito</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-center mb-4">
-                    <div class="card shadow mb-1 rounded" style="width: 20rem;">
-                        <h5 class="card-title pt-2 text-center  texto">Norte Alta</h5>
-                        <img src="./img/boleto_generico.jpeg" class="card-img-top imagen" alt="...">
-                        <div class="card-body">
-                            <h5 class=" texto ">Precio: $ <span class="precio">15000</span></h5>
-                            <div class="d-grid gap 2">
-                                <button class="btn btn-primary button boton">Añadir a carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex justify-content-center mb-4">
-                    <div class="card shadow mb-1 rounded" style="width: 20rem;">
-                        <h5 class="card-title pt-2 text-center  texto">Oriental</h5>
-                        <img src="./img/boleto_generico.jpeg" class="card-img-top imagen" alt="...">
-                        <div class="card-body">
-                            <h5 class=" texto">Precio: $ <span class="precio">25000</span></h5>
-                            <div class="d-grid gap 2">
-                                <button class="btn btn-primary button boton">Añadir a carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex justify-content-center mb-4">
-                    <div class="card shadow mb-1 rounded" style="width: 20rem;">
-                        <h5 class="card-title pt-2 text-center  texto ">Occidental Baja</h5>
-                        <img src="./img/boleto_generico.jpeg" class="card-img-top imagen" alt="...">
-                        <div class="card-body">
-                            <h5 class="texto">Precio: $ <span class="precio">35000</span></h5>
-                            <div class="d-grid gap 2">
-                                <button class="btn btn-primary button boton">Añadir a carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col d-flex justify-content-center mb-4">
-                    <div class="card shadow mb-1 rounded" style="width: 20rem;">
-                        <h5 class="card-title pt-2 text-center  texto ">Occidental Alta</h5>
-                        <img src="./boletos/boleto_generico.jpeg" class="card-img-top imagen" alt="...">
-                        <div class="card-body">
-                            <h5 class="texto">Precio: $ <span class="precio">50000</span></h5>
-                            <div class="d-grid gap 2">
-                                <button class="btn btn-primary button boton">Añadir a carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <?php
+                    }
+                ?>
             </div>
+            <?php
+                mysqli_close($conexion);
+            ?>
         </div>
         <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
             <br>
