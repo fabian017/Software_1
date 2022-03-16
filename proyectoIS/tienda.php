@@ -125,30 +125,7 @@
         </div>
     </div>
     <br><br>
-    <div class="tab-pane fade carrito" id="carrito" role="tabpanel" aria-labelledby="pills-contact-tab">
-        <br>
-        <table class="table">
-            <thead>
-                <tr class="text-primary">
-                    <th scope="col">#</th>
-                    <th scope="col">Productos</th>
-                    <th scope="col">Precio</th>
-                    <th scope="col">Cantidad</th>
-                </tr>
-            </thead>
-            <tbody class="tbody">
-            </tbody>
-        </table>
-        <br><br>
-        <div class="row mx-4">
-            <div class="col">
-                <h3 class="itemCartTotal text-Black">Total: 0</h3>
-            </div>
-            <div class="col d-flex justify-content-end">
-                <button class="btn btn-success">COMPRAR</button>
-            </div>
-        </div>
-    </div>
+    
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
