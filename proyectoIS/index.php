@@ -46,7 +46,7 @@
 <div class="titular">
         <h1>Atletico Bucaramanga</h1>
         <h2>La pasion de todo un departamento</h2>
-        <a class="boton" href="calendario.php" target="_blank"> VER PROXIMOS PARTIDOS</a>
+        <a class="boton" href="calendario.php"> VER PROXIMOS PARTIDOS</a>
 </div>
 </div>
 
