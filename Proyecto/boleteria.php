@@ -65,7 +65,7 @@
                             <p class="card-text  description">Some quick example text to build on the card
                                 title and make up the bulk
                                 of the card's content.</p>
-                            <h5 class=" texto">Precio: <span class="precio">$15.000</span></h5>
+                            <h5 class=" texto">Precio: <span class="precio">15.000</span></h5>
                             <div class="d-grid gap 2">
                                 <button class="btn btn-primary button boton">Añadir a carrito</button>
                             </div>
@@ -80,7 +80,7 @@
                             <p class="card-text  description">Some quick example text to build on the card
                                 title and make up the bulk
                                 of the card's content.</p>
-                            <h5 class=" texto ">Precio: <span class="precio">$15.000</span></h5>
+                            <h5 class=" texto ">Precio: <span class="precio">15.000</span></h5>
                             <div class="d-grid gap 2">
                                 <button class="btn btn-primary button boton">Añadir a carrito</button>
                             </div>
@@ -95,7 +95,7 @@
                             <p class="card-text  description">Some quick example text to build on the card
                                 title and make up the bulk
                                 of the card's content.</p>
-                            <h5 class=" texto">Precio: <span class="precio">$25.000</span></h5>
+                            <h5 class=" texto">Precio: <span class="precio">25.000</span></h5>
                             <div class="d-grid gap 2">
                                 <button class="btn btn-primary button boton">Añadir a carrito</button>
                             </div>
@@ -110,7 +110,7 @@
                             <p class="card-text  description">Some quick example text to build on the card
                                 title and make up the bulk
                                 of the card's content.</p>
-                            <h5 class="texto">Precio: <span class="precio">$35.000</span></h5>
+                            <h5 class="texto">Precio: <span class="precio">35.000</span></h5>
                             <div class="d-grid gap 2">
                                 <button class="btn btn-primary button boton">Añadir a carrito</button>
                             </div>
@@ -125,7 +125,7 @@
                             <p class="card-text  description">Some quick example text to build on the card
                                 title and make up the bulk
                                 of the card's content.</p>
-                            <h5 class="texto">Precio: <span class="precio">$50.000</span></h5>
+                            <h5 class="texto">Precio: <span class="precio">50.000</span></h5>
                             <div class="d-grid gap 2">
                                 <button class="btn btn-primary button boton">Añadir a carrito</button>
                             </div>
@@ -236,7 +236,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="./js/scripts.js"></script>
+    <script src="./js/boletas.js"></script>
 </body>
 
 </html>
