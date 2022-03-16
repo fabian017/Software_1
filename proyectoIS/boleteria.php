@@ -34,7 +34,7 @@
             </p> 
             <nav>
                 <ul class="nav nav-pills mb-3 py-3 container lista" id="pills-tab" role="tablist">
-                    <a href="/proyectois"><li>Inicio</li></a>
+                    <a href="index.php"><li>Inicio</li></a>
                     <a href="plantilla.php"><li>Plantilla</li></a>
                     <a href="calendario.php"><li>Calendario</li></a>
                     <a href="tienda.php"><li>Tienda</li></a>
