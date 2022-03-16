@@ -84,7 +84,7 @@
                                 class="card-img-top imagen" alt="...">
                             <div class="card-body">
                                 <p class="card-text  description"><?php echo $filas['descripcion'] ?></p>
-                                <h5 class=" texto">Precio: <span class="precio"><?php echo $filas['precio'] ?></span></h5>
+                                <h5 class=" texto">Precio: $ <span class="precio"><?php echo $filas['precio'] ?></span></h5>
                                 <div class="d-grid gap 2">
                                     <button class="btn btn-primary button boton">Añadir a carrito</button>
                                 </div>
