@@ -62,60 +62,6 @@
             <selection class="slider_body slider_body--show" data-id="1">
                 <div class="slider_texts">
                     <h2 class="subtitle">
-                        Atletico Bucaramanga Vs Atletico Nacional 
-                        <p class="slider_review">
-                            9a. fecha - febrero 27<br>
-                            Hora: 6:10 PM<br>
-                            Estadio: Alfonso López<br>
-                            Transmisión: Win+
-                        </p>
-                </div>
-
-                    <figure class="slider_picture">
-                        <img src="img/Nacional-vs-Bucaramanga.png" class="slider_img">
-                    </figure>
-                </h2>
-            </selection>
-
-            <selection class="slider_body" data-id="2">
-                <div class="slider_texts">
-                    <h2 class="subtitle">
-                        Alianza Petrolera Vs Atletico Bucaramanga
-                        <p class="slider_review">
-                            10a. fecha - marzo 6<br>
-                            Hora: 4:05 p.m.<br>
-                            Estadio: Daniel Villa Zapata<br>
-                            Transmisión: Win+
-                        </p>
-                </div>
-
-                    <figure class="slider_picture">
-                        <img src="img/alinza-vs-bucaramanga.jpg" class="slider_img">
-                    </figure>
-                </h2>
-            </selection>
-
-            <selection class="slider_body" data-id="3">
-                <div class="slider_texts">
-                    <h2 class="subtitle">
-                        Atletico Bucaramanga Vs Deportivo Cali
-                        <p class="slider_review">
-                            11a. fecha - marzo 20<br>
-                            Hora: 6:05 p.m.<br>
-                            Estadio: Alfonso López<br>
-                            Transmisión: Win+
-                        </p>
-                </div>
-
-                    <figure class="slider_picture">
-                        <img src="img/bucaramanga-vs-cali.jpg" class="slider_img">
-                    </figure>
-                </h2>
-            </selection>
-
-            <selection class="slider_body" data-id="4">
-                <div class="slider_texts">
-                    <h2 class="subtitle">
                         Independiente Santa Fe Vs Atletico Bucaramanga
                         <p class="slider_review">
                             12a. fecha - marzo 21<br>
@@ -131,7 +77,7 @@
                 </h2>
             </selection>
 
-            <selection class="slider_body" data-id="5">
+            <selection class="slider_body" data-id="2">
                 <div class="slider_texts">
                     <h2 class="subtitle">
                         Atletico Bucaramanga Vs Jaguares FC
@@ -152,7 +98,8 @@
 
             <img src="img/rightarrow.svg" class="slider_arrow" id="next">
         </div>
+        
     </selection>
-
+        
     <script src="js/sliders.js"></script>
     <?php include("template/footer.php"); ?>
