@@ -92,7 +92,7 @@
             </tbody>
            
         </table>
-
+        <button name="enviar" type="submit">Generar venta productos</button>  
 
         
     <?php
