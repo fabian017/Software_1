@@ -21,10 +21,7 @@
                     <a href="calendario.php"><li >Calendario</li> </a>
                     <a href="tienda2.php"><li >Tienda</li></a>
                     <a href="boleteria.php"><li >Boleteria</li></a>
-                    <li class="nav-item carro" role="presentation">
-                        <a class="nav-link carro" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</a>
-                    </li>
+                    
                     
                     <a href="index2.php"><li ><img src="img/escudo.png" alt=""></li></a>
                 </ul>
