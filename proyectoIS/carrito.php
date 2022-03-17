@@ -59,7 +59,7 @@
     <?php
         include("conexion.php");
         //select * from detalleventa;
-        $sql="select dv.id,p.nombre,dv.cantidad from detalleventa dv, producto p where dv.idproducto=p.id";
+        $sql="select dv.id,p.nombre,dv.cantidad from detalleventa dv, producto p where dv.idproducto=p.id and dv.idcliente='".$user['id']."'";
         $resultado=mysqli_query($conexion,$sql);    
     ?>
         <table class="table ">
@@ -92,12 +92,14 @@
             </tbody>
            
         </table>
+
+
         
     <?php
     include("conexion.php");
     //select * from detalleventa;
-    $sql="select db.id,b.nombre,db.precio,db.idcliente from detalleboleta db, boleta b, cliente c 
-    where db.idboleta=b.id and db.idcliente=c.id;";
+    $sql="select db.id,b.nombre,b.precio,db.idcliente from detalleboleta db, boleta b
+    where db.idboleta=b.id and db.idcliente='".$user['id']."';";
     $resultado=mysqli_query($conexion,$sql);    
     ?>
         <table class="table ">
@@ -129,8 +131,9 @@
                 ?>
             </tbody>
            
-        </table>        
-
+        </table>
+        <button name="enviar" type="submit">Generar venta boleta</button>        
+                     
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"

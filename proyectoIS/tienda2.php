@@ -80,8 +80,8 @@
 
                         include("conexion.php");
                         //INSERT INTO `producto` (id, nombre, precio, unidades, descripcion) VALUES (NULL, $nombre,$precio,$unidades,$descripcion);
-                        $sql="INSERT INTO detalleventa (idproducto, cantidad) 
-                        VALUES ('".$idp."','".$cantidad."')";
+                        $sql="INSERT INTO detalleventa (idproducto, cantidad, idcliente) 
+                        VALUES ('".$idp."','".$cantidad."','".$user['id']."')";
 
                         $resultado=mysqli_query($conexion,$sql);
                         if($resultado){

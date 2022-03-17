@@ -82,8 +82,8 @@
 
                         include("conexion.php");
                         //INSERT INTO detalleboleta (idboleta, precio,idcliente) VALUES ('".$idb."','".$precio."','".$user['id']."')";
-                        $sql="INSERT INTO detalleboleta (idboleta, precio,idcliente) 
-                        VALUES ('".$idb."','".$precio."','".$user['id']."')";
+                        $sql="INSERT INTO detalleboleta (idboleta,idcliente) 
+                        VALUES ('".$idb."','".$user['id']."')";
 
                         $resultado=mysqli_query($conexion,$sql);
                         if($resultado){
@@ -110,7 +110,7 @@
                             class="card-img-top imagen" alt="...">
                             <div class="card-body">
                                 
-                                <input name="idb" class=" card-title2 pt-2 text-center  texto sinborde" readonly type="text" value="<?php echo $filas['id']?>">
+                                <input name="idb" class=" card-title2 pt-2 text-center  texto sinborde" readonly type="hidden" value="<?php echo $filas['id']?>">
                             
                                 <p class="card-text  description"><?php echo $filas['partido'] ?></p>
                                 
