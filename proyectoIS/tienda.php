@@ -79,10 +79,12 @@
                     ?>
                     <div class="col d-flex justify-content-center mb-4 producto">
                         <div class="card shadow mb-1 rounded" style="width: 20rem;">
+                            
                             <h5 class="card-title pt-2 text-center  texto"><?php echo $filas['nombre'] ?></h5>
                             <img src="./img/productos/<?php echo $filas['nombre'] ?>.png"
                                 class="card-img-top imagen" alt="...">
                             <div class="card-body">
+                                <p class="ids card-title2 pt-2 text-center  texto"><?php echo $filas['id'] ?></p>
                                 <p class="card-text  description"><?php echo $filas['descripcion'] ?></p>
                                 <h5 class=" texto">Precio: $ <span class="precio"><?php echo $filas['precio'] ?></span></h5>
                                 <div class="d-grid gap 2">
@@ -133,6 +135,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="./js/scripts.js"></script>
+    <script src="./js/script.js"></script> <!-- Cambio scripts.js por script.js-->
 
 <?php include("template/footer.php"); ?>

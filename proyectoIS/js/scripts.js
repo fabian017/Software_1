@@ -8,11 +8,13 @@ Clickbutton.forEach(btn => {
 function addToCarritoItem(e){
     const button = e.target
     const item = button.closest('.card')
+    const itemID = item.querySelector('.ids').textContent;
     const itemTitle = item.querySelector('.card-title').textContent;
     const itemPrice = item.querySelector('.precio').textContent
     const itemImg = item.querySelector('.card-img-top').src
     
     const newItem ={
+        id: itemID,
         title: itemTitle,
         precio: itemPrice,
         img: itemImg,
@@ -48,7 +50,7 @@ function renderCarrito(){
         const tr = document.createElement('tr')
         tr.classList.add('ItemCarrito')
         const Content = 
-        `<th scope="row">1</th>
+        `<th scope="row">${item.id}</th>
         <td class="table_productos">
             <img src=${item.img}
                 alt="">
