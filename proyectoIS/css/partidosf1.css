@@ -192,4 +192,5 @@ a{
 .posiciones{
     margin-bottom: -50px;
     margin-top: 30px;
+    justify-content: center;
 }

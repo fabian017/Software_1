@@ -17,7 +17,7 @@
 
 <?php include("template/header.php"); ?> 
     <title>Proximos Partidos de Atletico Bucaramanga</title>
-    <link rel="stylesheet" href="css/PartidosF.css">
+    <link rel="stylesheet" href="css/PartidosF1.css">
 
     
 </head>
@@ -100,6 +100,8 @@
         </div>
         
     </selection>
+    <div class="posiciones"><img src="img/posiciones1703.png" alt="Tabla de posiciones" class="posiciones"></div>
+    
         
     <script src="js/sliders.js"></script>
     <?php include("template/footer.php"); ?>

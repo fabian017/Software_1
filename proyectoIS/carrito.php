@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/tienda3.css">
 </head>
 <body>
+    <div class="contenedor">
     <header class="container-fluid  position-sticky top-0">
         <div class="menu">
             <p class="nombret">
@@ -81,7 +82,7 @@
                     <td class="table_cantidad"><?php echo $filas['id'] ?></td>
                     <td class="table_productos"><?php echo $filas['nombre'] ?></td>
                     <td class="table_price"><?php echo $filas['cantidad'] ?></td>
-                    <td class="table_img"><img src="./img/productos/<?php echo $filas['nombre'] ?>.png" class="card-img-top imagen" alt="..."></td>
+                    <td class="table_productos"><img src="./img/productos/<?php echo $filas['nombre'] ?>.png" class="card-img-top imagen" alt="..."></td>
                     <td>
                         <?php echo "<a class='delete' href='eliminarcarrito.php?id1=".$filas['id']."' onclick='return confirmar()'>DELETE</a>";?>
                     </td>
@@ -92,7 +93,7 @@
             </tbody>
            
         </table>
-        <button name="enviar" type="submit">Generar venta productos</button>  
+        <button name="enviar" type="submit"class="venta" id="venta1">Generar venta productos</button>  
 
         
     <?php
@@ -132,9 +133,9 @@
             </tbody>
            
         </table>
-        <button name="enviar" type="submit">Generar venta boleta</button>        
+        <button name="enviar" type="submit" class="venta" >Generar venta boleta</button>        
                      
-
+        </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
