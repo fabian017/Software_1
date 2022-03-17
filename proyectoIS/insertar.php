@@ -86,7 +86,7 @@
 
         ?>
         <div class="contenedor__login-register">
-            <h1 class="titulos">Añadir Inventario Leopardo grrr</h1>
+            <h1 class="titulos">Añadir Inventario Leopardo</h1>
             <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
                 <input class="inputs" type="text" name="nombre" id="nombre" placeholder="Ingrese Nombre del producto">
                 <input class="inputs" type="text" name="precio" id="precio" placeholder="Ingrese su precio">
