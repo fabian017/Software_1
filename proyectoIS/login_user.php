@@ -5,7 +5,7 @@
 <?php include("template/header.php"); ?> 
     <title>Login AB</title>
     
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/insertar.css">
 </head>
 <body>
     <!-- Menú navegación -->

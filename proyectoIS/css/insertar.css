@@ -1,0 +1,27 @@
+.inputs {
+    width: 100%;
+    background: #f4f81d;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #ffffff;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(32, 223, 25);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.btn_agregar{
+    background-color: #0c9b18;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}

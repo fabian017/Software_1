@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="css/index.css">
 </head>
 <div class="contenedor">
-<div class="menu">
+        <div class="menu">
             <p class="nombret">
                 Atletico Bucaramanga
             </p> 
