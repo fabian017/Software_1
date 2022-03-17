@@ -47,7 +47,7 @@
                         <a href="tienda.php"><li>Tienda</li></a>
                         <a href="boleteria.php"><li>Boleteria</li></a>
                         <?php if(!empty($user)): ?>
-                                <li class="nombre_usuario">Hola. <?= $user['nombre']; ?> <?= $user['apellido']?></li>
+                            <a class="nombre_usuario" href="editar_user.php"><li> Hola, <?= $user['nombre']; ?> <?= $user['apellido']?></li></a>
                                 <a href="logout.php"><li>Logout</li></a>
                         <?php else: ?>
                                 <a href="login_user.php"><li>Login</li></a>
@@ -126,7 +126,7 @@
                     <td class="table_cantidad"><?php echo $filas['unidades'] ?></td>
                     <td class="table_cantidad"><?php echo $filas['descripcion'] ?></td>
                     <td>
-                        <?php echo "<a class='edit' href='edit.php?id=".$filas['id']."'>EDIT</a>";?>
+                        <?php echo "<a class='edit' href='editar.php?id=".$filas['id']."'>EDIT</a>";?>
                         <?php echo "<a class='delete' href='eliminar.php?id=".$filas['id']."' onclick='return confirmar()'>DELETE</a>";?>
                     </td>
                 </tr>

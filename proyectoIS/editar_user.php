@@ -51,12 +51,13 @@
         if(isset($_POST['enviar'])){
             $id=$_POST["id"];
             $nombre=$_POST['nombre'];
-            $precio=$_POST['precio'];
-            $unidades=$_POST['unidades'];
-            $descripcion=$_POST['descripcion'];
+            $apellido=$_POST['apellido'];
+            $correo=$_POST['correo'];
+            $username=$_POST['username'];
+            $pass=$_POST['pass'];
             //UPDATE producto set nombre=$nombre,precio=$precio,unidades=$unidades,descripcion=$descripcion where id=$id;
-            $sql="UPDATE producto set nombre='".$nombre."',precio='".$precio."',
-                unidades='".$unidades."',descripcion = '".$descripcion."' 
+            $sql="UPDATE cliente set nombre='".$nombre."',apellido='".$apellido."', correo = '".$correo."'
+                ,username = '".$username."', pass = '".$pass."'
                 where id='".$id."'";
 
             $resultado=mysqli_query($conexion,$sql);
@@ -64,37 +65,27 @@
                     //los datos ingresaron correctamente
                 echo " <script language='JavaScript'>
                         alert('Los datos fueron modificados correctamente');
-                        location.assign('insertar.php');
+                        location.assign('index.php');
                         </script>";
             }else{
                 echo " <script language='JavaScript'>
                         alert('ERROR: Los datos NO fueron modificados correctamente');
-                        location.assign('insertar.php');
+                        location.assign('index.php');
                         </script>";
             }
             mysqli_close($conexion);
         }else{
-            //aqui entra si no se presiona el boton enviar
-            $id=$_GET["id"];
-            $sql="select * from producto where id='".$id."'";
-            $resultado=mysqli_query($conexion,$sql);
-
-            $fila=mysqli_fetch_assoc($resultado);
-            $nombre=$fila["nombre"];
-            $precio=$fila["precio"];
-            $unidades=$fila["unidades"];
-            $descripcion=$fila["descripcion"];
-
-            mysqli_close($conexion);
+           
     ?>
-        <div class="contenedor__login-register">
-            <h1 class="titulos">Modificar productos</h1>
+    <div class="contenedor__login-register">
+            <h1 class="titulos">Editar Usuario</h1>
             <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-                <input class="inputs" type="text" name="nombre" id="nombre" value="<?php echo $nombre;?>">
-                <input class="inputs" type="text" name="precio" id="precio" value="<?php echo $precio;?>">
-                <input class="inputs" type="text" name="unidades" id="unidades" value="<?php echo $unidades;?>">
-                <input class="inputs" type="text" name="descripcion" id="descripcion" value="<?php echo $descripcion;?>">
-                <input type="hidden" name="id" value="<?php echo $id;?>">
+                <input class="inputs" type="text" name="nombre" id="nombre" value="<?php echo $user["nombre"];?>">
+                <input class="inputs" type="text" name="apellido" id="apellido" value="<?php echo $user["apellido"];?>">
+                <input class="inputs" type="text" name="correo" id="correo" value="<?php echo $user["correo"];?>">
+                <input class="inputs" type="text" name="username" id="username" value="<?php echo $user["username"];?>">
+                <input class="inputs" type="text" name="pass" id="pass" value="<?php echo $user["pass"];?>">
+                <input type="hidden" name="id" value="<?php echo $user["id"];?>">
                 <input class="btn_agregar" type="submit" name="enviar" value="EDITAR">
             </form>
         </div>

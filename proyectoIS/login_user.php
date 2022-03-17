@@ -89,7 +89,8 @@
                         <h2>Iniciar Sesión</h2>
                         <input type="email" placeholder="Correo Electronico" name="correo-login">
                         <input type="password" placeholder="Contraseña" name="pass-login">
-                        <input type="checkbox" class="role-admin"><label>Admin  </label><br>
+                        <br>
+                        <br>
                         <button class="entrar" name="entrar" type="submit">Entrar</button>
                     </form>
                     </div>
