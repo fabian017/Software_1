@@ -23,7 +23,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/tienda.css">
+    <link rel="stylesheet" href="css/tienda3.css">
 </head>
 
 <body>
@@ -33,6 +33,7 @@
         $sql="select * from boleta";
         $resultado=mysqli_query($conexion,$sql);    
     ?>
+
     <header class="container-fluid  position-sticky top-0">
         <div class="menu">
             <p class="nombret">
@@ -46,90 +47,106 @@
                     <?php }endif; ?>
                     <a href="index.php"><li>Inicio</li></a>
                     <a href="plantilla.php"><li>Plantilla</li></a>
-                    <a href="calendario.php"><li>Calendario</li></a>
-                    <a href="tienda.php"><li>Tienda</li></a>
-                    <a href="boleteria.php"><li>Boleteria</li></a>
+                    <a href="calendario.php"><li >Calendario</li> </a>
+                    <a href="tienda2.php"><li >Tienda</li></a>
+                    <a href="boleteria.php"><li >Boleteria</li></a>
                     <?php if(!empty($user)): ?>
                             <a class="nombre_usuario" href="editar_user.php"><li> Hola, <?= $user['nombre']; ?> <?= $user['apellido']?></li></a>
                             <a href="logout.php"><li>Logout</li></a>
+                            <a href="carrito.php"><li class="texto" >Carrito</li></a>
                     <?php else: ?>
                             <a href="login_user.php"><li>Login</li></a>
                     <?php endif; ?>
-                    <li class="nav-item carro" role="presentation">
-                        <a class="nav-link carro" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</a>
-                    </li>
                     
-                    <a href="/proyectois"><li><img src="img/escudo.png" alt=""></li></a>
+                    <a href="index.php"><li ><img src="img/escudo.png" alt=""></li></a>
                 </ul>
             </nav>
         </div>
-
     </header>
-    <div class="alert container position-sticky top 0 alert-primary hide" role="alert">
-        Producto añadido al Carrito
-    </div>
-    <div class="alert container position-sticky top 0 alert-danger remove" role="alert">
-        Producto removido
-    </div>
+    
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">1</div>
-        <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
-            aria-labelledby="pills-profile-tab">
-            <h2 class="h4 m-4">Boleteria Oficial Atletico Bucaramanga</h2>
-            
-            <div class=" row row-cols-sm-1 row row-cols-smd-2 row row-cols-lg-3 row row-cols-xl-4">
-                <?php
-                    while($filas=mysqli_fetch_assoc($resultado)){
-                ?>
-                <div class="col d-flex justify-content-center mb-4 producto">
+            <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
+                aria-labelledby="pills-profile-tab">
+                <h2 class="h4 m-4">Boletería</h2>
+                
+                <div class=" row row-cols-sm-1 row row-cols-smd-2 row row-cols-lg-3 row row-cols-xl-4">
+                    <?php
+                        while($filas=mysqli_fetch_assoc($resultado)){
+                    ?>
+                    <div class="col d-flex justify-content-center mb-4 producto">
+                    <?php
+                        if(isset($_POST['add2'])){
+                        $idb=$_POST['idb'];
+                        $precio=$_POST['precio'];
+
+                        include("conexion.php");
+                        //INSERT INTO detalleboleta (idboleta, precio,idcliente) VALUES ('".$idb."','".$precio."','".$user['id']."')";
+                        $sql="INSERT INTO detalleboleta (idboleta, precio,idcliente) 
+                        VALUES ('".$idb."','".$precio."','".$user['id']."')";
+
+                        $resultado=mysqli_query($conexion,$sql);
+                        if($resultado){
+                            //los datos ingresaron correctamente
+                            echo " <script language='JavaScript'>
+                                    alert('Los datos fueron ingresados correctamente');
+                                    location.assign('boleteria.php');
+                                    </script>";
+                        }else{
+                            echo " <script language='JavaScript'>
+                                    alert('ERROR: Los datos NO fueron ingresados correctamente');
+                                    location.assign('boleteria.php');
+                                    </script>";
+                        }
+                        mysqli_close($conexion);
+                        }else{
+
+                     ?>
                     <div class="card shadow mb-1 rounded" style="width: 20rem;">
-                        <h5 class="card-title pt-2 text-center  texto"><?php echo $filas['nombre'] ?></h5>
-                        <img src="./img/boleto_generico.jpeg"
+                        <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+                            <input name="nombre" class="n card-title pt-2 text-center  texto sinborde" readonly type="text" value="<?php echo $filas['nombre']?>">
+                        
+                            <img src="./img/boleto_generico.jpeg"
                             class="card-img-top imagen" alt="...">
-                        <div class="card-body">
-                            <p class="card-text  description"><?php echo $filas['partido'] ?></p>
-                            <h5 class=" texto">Precio: $ <span class="precio"><?php echo $filas['precio'] ?></span></h5>
-                            <div class="d-grid gap 2">
-                                <button class="btn btn-primary button boton">Añadir a carrito</button>
+                            <div class="card-body">
+                                
+                                <input name="idb" class=" card-title2 pt-2 text-center  texto sinborde" readonly type="text" value="<?php echo $filas['id']?>">
+                            
+                                <p class="card-text  description"><?php echo $filas['partido'] ?></p>
+                                
+                                <input name="partido" class="d" type="hidden" value="<?php echo $filas['partido']?>">
+                                
+                                
+                                <input name="precio" class="pp texto sinborde" readonly type="text" value="<?php echo $filas['precio']?>">
+                                <p></p>
+                                <?php if(!empty($user)): ?>
+                                <div class="d-grid gap 2">
+                                    <button type="submit" name="add2" class="btn btn-primary button boton">Añadir a carrito</button>
+                                </div>
+                                <?php endif; ?>
                             </div>
-                        </div>
+                        </form>
                     </div>
+                        <?php
+                            }
+                        ?>
+                    </div>
+                    <?php
+                        }
+                    ?>
                 </div>
                 <?php
-                    }
+                    mysqli_close($conexion);
                 ?>
             </div>
-            <?php
-                mysqli_close($conexion);
-            ?>
-        </div>
-        <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-            <br>
-            <table class="table table-dark table-striped">
-                <thead>
-                    <tr class="text-primary">
-                        <th scope="col">#</th>
-                        <th scope="col">Productos</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Cantidad</th>
-                    </tr>
-                </thead>
-                <tbody class="tbody">
-                </tbody>
-            </table>
-            <br><br>
-            <div class="row mx-4">
-                <div class="col">
-                    <h3 class="itemCartTotal text-white">Total: 0</h3>
-                </div>
-                <div class="col d-flex justify-content-end">
-                    <button class="btn btn-success">COMPRAR</button>
-                </div>
-            </div>
-        </div>
+
     </div>
     <br><br>
+<!-- hasta aca -->
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -137,5 +154,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="./js/boletas.js"></script>
     <?php include("template/footer.php"); ?>

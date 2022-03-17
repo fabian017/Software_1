@@ -19,7 +19,7 @@
                     <a href="index.php"><li>Inicio</li></a>
                     <a href="plantilla.php"><li>Plantilla</li></a>
                     <a href="calendario.php"><li >Calendario</li> </a>
-                    <a href="tienda.php"><li >Tienda</li></a>
+                    <a href="tienda2.php"><li >Tienda</li></a>
                     <a href="boleteria.php"><li >Boleteria</li></a>
                     <li class="nav-item carro" role="presentation">
                         <a class="nav-link carro" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"

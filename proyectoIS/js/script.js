@@ -8,9 +8,9 @@ Clickbutton.forEach(btn => {
 function addToCarritoItem(e){
     const button = e.target
     const item = button.closest('.card')
-    const itemID = item.querySelector('.ids').textContent;
-    const itemTitle = item.querySelector('.card-title').textContent;
-    const itemPrice = item.querySelector('.precio').textContent
+    const itemID = item.querySelector('.idp').value;
+    const itemTitle = item.querySelector('.n').value;
+    const itemPrice = item.querySelector('.pp').value
     const itemImg = item.querySelector('.card-img-top').src
     
     const newItem ={

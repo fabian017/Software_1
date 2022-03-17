@@ -44,7 +44,7 @@
                         <a href="index.php"><li>Inicio</li></a>
                         <a href="plantilla.php"><li>Plantilla</li></a>
                         <a href="calendario.php"><li >Calendario</li></a>
-                        <a href="tienda.php"><li>Tienda</li></a>
+                        <a href="tienda2.php"><li>Tienda</li></a>
                         <a href="boleteria.php"><li>Boleteria</li></a>
                         <?php if(!empty($user)): ?>
                             <a class="nombre_usuario" href="editar_user.php"><li> Hola, <?= $user['nombre']; ?> <?= $user['apellido']?></li></a>
