@@ -95,30 +95,30 @@
                 $sql="select * from producto";
                 $resultado=mysqli_query($conexion,$sql);    
             ?>
-        <table>
+        <table class="table ">
             <thead>
-                <tr>
-                    <th>id</th>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Unidades</th>
-                    <th>Descripcion</th>
-                    <th>Acciones</th>
+                <tr class="text-t">
+                    <th scope="col">id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Unidades</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Acciones</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="tbody">
                 <?php
                     while($filas=mysqli_fetch_assoc($resultado)){
                 ?>
                 <tr>
-                    <td><?php echo $filas['id'] ?></td>
-                    <td><?php echo $filas['nombre'] ?></td>
-                    <td><?php echo $filas['precio'] ?></td>
-                    <td><?php echo $filas['unidades'] ?></td>
-                    <td><?php echo $filas['descripcion'] ?></td>
+                    <td class="table_cantidad"><?php echo $filas['id'] ?></td>
+                    <td class="table_productos"><?php echo $filas['nombre'] ?></td>
+                    <td class="table_price"><?php echo $filas['precio'] ?></td>
+                    <td class="table_cantidad"><?php echo $filas['unidades'] ?></td>
+                    <td class="table_cantidad"><?php echo $filas['descripcion'] ?></td>
                     <td>
-                        <?php echo "<a href='edit.php?id=".$filas['id']."'>EDIT</a>";?>
-                        <?php echo "<a href='eliminar.php?id=".$filas['id']."' onclick='return confirmar()'>DELETE</a>";?>
+                        <?php echo "<a class='edit' href='edit.php?id=".$filas['id']."'>EDIT</a>";?>
+                        <?php echo "<a class='delete' href='eliminar.php?id=".$filas['id']."' onclick='return confirmar()'>DELETE</a>";?>
                     </td>
                 </tr>
                 <?php
