@@ -27,6 +27,10 @@
             </p> 
             <nav>
                 <ul class="lista">
+                        <?php if(!empty($user)):
+                                if($user['rol']==1){ ?>
+                                <a href="insertar.php"><li>Administrar</li></a>
+                        <?php }endif; ?>
                         <a href="index.php"><li>Inicio</li></a>
                         <a href="plantilla.php"><li>Plantilla</li></a>
                         <a href="calendario.php"><li >Calendario</li></a>

@@ -4,7 +4,7 @@
   include("conexion.php");
 
   if (isset($_SESSION['user_id'])) {
-        $sql="SELECT id,nombre,apellido,correo,username,pass FROM cliente WHERE id = '".$_SESSION['user_id']."';";
+        $sql="SELECT id,nombre,apellido,correo,username,pass,rol FROM cliente WHERE id = '".$_SESSION['user_id']."';";
         $resultado=mysqli_query($conexion,$sql);
         $fila=mysqli_fetch_assoc($resultado);
         $user = null;
@@ -12,6 +12,15 @@
     if (count($fila) > 0) {
       $user = $fila;
     }
+    $si="1";
+    if (strcmp($user['rol'], $si) == 0) {
+    }
+    else {
+    header("Location:index.php");
+    }
+  }
+  if($_SESSION['user_id']==null){
+      header("Location:index.php");
   }
 ?>
 
