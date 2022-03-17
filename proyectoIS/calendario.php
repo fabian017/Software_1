@@ -4,7 +4,7 @@
   include("conexion.php");
 
   if (isset($_SESSION['user_id'])) {
-        $sql="SELECT id,nombre,apellido,correo,username,pass FROM cliente WHERE id = '".$_SESSION['user_id']."';";
+        $sql="SELECT id,nombre,apellido,correo,username,pass,rol FROM cliente WHERE id = '".$_SESSION['user_id']."';";
         $resultado=mysqli_query($conexion,$sql);
         $fila=mysqli_fetch_assoc($resultado);
         $user = null;
@@ -30,6 +30,10 @@
                 </p> 
                 <nav>
                     <ul class="lista">
+                        <?php if(!empty($user)):
+                            if($user['rol']==1){ ?>
+                            <a href="insertar.php"><li>Administrar</li></a>
+                        <?php }endif; ?>
                         <a href="index.php"><li>Inicio</li></a>
                         <a href="plantilla.php"><li >Plantilla</li></a>
                         <a href="calendario.php"><li>Calendario</li></a>

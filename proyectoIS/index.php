@@ -4,7 +4,7 @@
   include("conexion.php");
 
   if (isset($_SESSION['user_id'])) {
-        $sql="SELECT id,nombre,apellido,correo,username,pass FROM cliente WHERE id = '".$_SESSION['user_id']."';";
+        $sql="SELECT id,nombre,apellido,correo,username,pass,rol FROM cliente WHERE id = '".$_SESSION['user_id']."';";
         $resultado=mysqli_query($conexion,$sql);
         $fila=mysqli_fetch_assoc($resultado);
         $user = null;
