@@ -93,7 +93,7 @@
             </tbody>
            
         </table>
-        <button name="enviar" type="submit"class="venta" id="venta1">Generar venta productos</button>  
+        <a name="enviar" type="submit"class="venta" id="venta1" href="index.php">Generar venta productos</a>  
 
         
     <?php
@@ -133,8 +133,7 @@
             </tbody>
            
         </table>
-        <button name="enviar" type="submit" class="venta" >Generar venta boleta</button>        
-                     
+        <a name="enviar" type="submit" class="venta" href="index.php" >Generar venta boleta</a>  
         </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
